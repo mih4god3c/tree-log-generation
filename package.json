@@ -1,0 +1,47 @@
+{
+  "name": "log-generator",
+  "version": "1.0.0",
+  "license": "MIT",
+  "type": "module",
+  "main": "build/log-generator.umd.js",
+  "module": "build/log-generator.es.js",
+  "exports": {
+    ".": {
+      "import": "./build/log-generator.es.js",
+      "require": "./build/log-generator.umd.js"
+    }
+  },
+  "files": [
+    "build",
+    "src",
+    "LICENSE",
+    "package.json"
+  ],
+  "types": "./build/log-generator.es.d.ts",
+  "scripts": {
+    "build:app": "vite build --config vite.app.config.js",
+    "build:lib": "vite build --config vite.lib.config.js",
+    "build:watch": "vite build --config vite.lib.config.js --watch",
+    "app": "npm run build:lib && vite --config vite.app.config.js",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/three": "^0.169.0",
+    "three": "^0.167.x",
+    "vite": "^5.0.0",
+    "vite-plugin-dts": "^3.9.1",
+    "vite-plugin-static-copy": "^1.0.5"
+  },
+  "peerDependencies": {
+    "three": ">=0.167"
+  },
+  "keywords": [
+    "threejs",
+    "procedural",
+    "generation",
+    "log",
+    "wood",
+    "3d"
+  ],
+  "dependencies": {}
+}
