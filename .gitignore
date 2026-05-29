@@ -1,5 +1,9 @@
 .DS_Store
 build
+
+# Report / LaTeX
+report/
+NRG_SEMINAR/
 # Logs
 logs
 *.log
